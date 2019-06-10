@@ -21,6 +21,9 @@ public class Main {
 //		var2.e += 1;
 //		var2.a += 1;
 //		System.out.println("e = " + var2.e + ", a = " + var2.a);
+		
+//		Variable var3 = new Variable(2, 1.35, 'f', 0.68);
+//		System.out.println("imported: " + var3.a +", "+ var3.b +", "+ var3.c);
 	}
 	
 }

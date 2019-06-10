@@ -7,20 +7,24 @@ public class Variable {
 	private double d = 1.3;
 	public static int e = 0;
 	
-//	public int a;
-//	protected double b;
-//	char c;
-//	private double d;
-	
 	public Variable() {
 		// Empty Constructor
 	}
 	
+//	public int a;
+//	protected double b;
+//	char c;
+//	private double d;
+//	
 //	public Variable(int a, double b, char c, double d) {
 //		this.a = a;
 //		this.b = b;
 //		this.c = c;
 //		this.d = d;
+//	}
+	
+//	public double getD() {
+//		return this.d;
 //	}
 
 }
