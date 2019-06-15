@@ -18,4 +18,8 @@ public class CompCourse extends Course {
 		return super.toString() + ", added CSE Disk Quota: " + getDiskQuota() + "MB";
 	}
 	
+	public void printQuota() {
+		System.out.println(diskQuota);
+	}
+	
 }
