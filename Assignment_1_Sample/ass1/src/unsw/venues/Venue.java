@@ -12,7 +12,6 @@ public class Venue {
 	private ArrayList<Room> rooms;
 
 	public Venue(String name) {
-		super();
 		this.name = name;
 		this.rooms = new ArrayList<Room>();
 	}
@@ -51,13 +50,13 @@ public class Venue {
 	}
 	
 	public JSONArray list() {
-		JSONArray result = new JSONArray();
+		JSONArray result = new JSONArray(); //JSONArray result
 		for(Room r: this.rooms) {
-			JSONObject roomInfo = new JSONObject();
-			roomInfo.put("room", r.getName());
-			roomInfo.put("reservations", r.getReservations());
-			result.put(roomInfo);
+			JSONObject roomInfo = new JSONObject(); //JSONObject for each room
+			roomInfo.put("room", r.getName()); //put in its roomName
+			roomInfo.put("reservations", r.getReservations()); //put in reservations (JSONArray)
+			result.put(roomInfo); //put whole room into JSONArray
 		}
-		return result;
+		return result; //return whole JSONArray: the result to output
 	}
 }

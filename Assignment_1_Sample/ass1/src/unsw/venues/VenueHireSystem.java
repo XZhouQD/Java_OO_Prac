@@ -90,7 +90,7 @@ public class VenueHireSystem {
         	if(venue.equals(v.getName())) {
         		venueExist = true;
         		v.addRoom(room, size);
-        		break;
+        		break; //return;
         	}
         }
         if(!venueExist) {
@@ -153,7 +153,7 @@ public class VenueHireSystem {
         		for(Room r: v.getRooms()) {
         			boolean release = true;
         			while(release)
-        				release = (r.releaseOrder(id) != null);
+        				release = (r.releaseOrder(id) != null); //True/False: r.releaseOrder(id): Order/null
         		}
         		orderList.clear();
         		venueFit = true;
