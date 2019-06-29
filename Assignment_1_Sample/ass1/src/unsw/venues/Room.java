@@ -11,9 +11,9 @@ public class Room {
 	private String name;
 	private String size;
 	private ArrayList<Order> orders;
-	private String belonging;
+	private String belonging; //Venue Name
+	
 	public Room(String name, String size, String belonging) {
-		super();
 		this.name = name;
 		this.size = size;
 		this.belonging = belonging;
@@ -50,6 +50,11 @@ public class Room {
 	
 	public void addOrder(Order order) {
 		for (int i = 0; i < orders.size(); i++) { //find if order add at the middle of list
+			/*
+			 * orders.get(i) : Order1(exist in the list)
+			 * Order1.getStartDate(): LocalDate1
+			 * LocalDate1.isBefore(order.getStartDate()): true? false?			 * 
+			 */
 			if (orders.get(i).getStartDate().isBefore(order.getStartDate()))
 				continue;
 			else {

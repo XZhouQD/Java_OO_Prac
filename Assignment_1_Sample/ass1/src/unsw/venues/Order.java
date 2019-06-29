@@ -6,14 +6,13 @@ import org.json.JSONObject;
 
 public class Order {
 
-	private String id;
-	private String roomName;
-	private String belonging;
-	private LocalDate startDate;
-	private LocalDate endDate;
+	private String id; //primary key
+	private String roomName; //get from aggregation room
+	private String belonging; //get from aggregation room (Name of Venue)
+	private LocalDate startDate; //created by request
+	private LocalDate endDate; //created by request
 	
 	public Order(String id, String roomName, String belonging, LocalDate startDate, LocalDate endDate) {
-		super();
 		this.id = id;
 		this.roomName = roomName;
 		this.belonging = belonging;
@@ -44,7 +43,7 @@ public class Order {
 	public JSONObject getInfo() {
 		JSONObject res = new JSONObject();
 		res.put("id", id);
-		res.put("start", startDate.toString());
+		res.put("start", startDate.toString()); //yyyy-mm-dd
 		res.put("end", endDate.toString());
 		return res;
 	}
