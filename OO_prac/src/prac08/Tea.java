@@ -1,31 +1,18 @@
 package prac08;
 
-public class Tea {
+public class Tea extends Beverage{
 
 	public Tea() {
 	}
 
-	public void makeTea() {
-		boilWater();
-		sweepTea();
-		pourInCup();
-		addLemon();
+	@Override
+	public void brew() {
+		System.out.println("Sweep Tea");
 	}
-	
-	public void boilWater() {
-		
-	}
-	
-	public void sweepTea() {
-		
-	}
-	
-	public void pourInCup() {
-		
-	}
-	
-	public void addLemon() {
-		
+
+	@Override
+	public void addCondiment() {
+		System.out.println("Add Lemon");
 	}
 
 	

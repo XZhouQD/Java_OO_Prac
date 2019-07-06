@@ -4,6 +4,7 @@ public class VendingMachine {
 
 	private int inventory;
 	private MachineState state;
+	
 	private MachineState noStock = new NoStock(this);
 	private MachineState pending = new Pending(this);
 	private MachineState coinInserted = new CoinInserted(this);

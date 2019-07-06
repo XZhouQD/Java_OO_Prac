@@ -1,31 +1,19 @@
 package prac08;
 
-public class Coffee {
+public class Coffee extends Beverage{
 
 	public Coffee() {
 	}
 	
-	public void makeCoffee() {
-		boilWater();
-		brewCoffee();
-		pourInCup();
-		addSugerMilk();
+
+	@Override
+	public void brew() {
+		System.out.println("Brew Coffee");
 	}
-	
-	public void boilWater() {
-		
-	}
-	
-	public void brewCoffee() {
-		
-	}
-	
-	public void pourInCup() {
-		
-	}
-	
-	public void addSugerMilk() {
-		
+
+	@Override
+	public void addCondiment() {
+		System.out.println("Add Sugar & Milk");
 	}
 
 }
