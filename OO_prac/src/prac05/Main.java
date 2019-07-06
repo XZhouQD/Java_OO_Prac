@@ -7,7 +7,7 @@ public class Main {
 	}
 
 	public static void main(String[] args) {
-		//Base bug1 = new Base(1, false, "Base Bug");
+//		Base bug1 = new Base(1, false, "Base Bug");
 		Base bug2 = new Normal(2, true, "Fixed normal bug");
 		Base bug3 = new Fatal(3, false, "Unfixed fatal bug", "It is unhealthy");
 		
