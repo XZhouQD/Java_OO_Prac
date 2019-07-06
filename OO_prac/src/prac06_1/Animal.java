@@ -7,12 +7,24 @@ public class Animal {
 	private double height;
 	private double length;
 	
+	private Sound sound;
+	
 	public Animal(String name, double weight, double height, double length) {
 		this.name = name;
 		this.weight = weight;
 		this.height = height;
 		this.length = length;
 	}
+	
+	
+	public void setSound(Sound sound) {
+		this.sound = sound;
+	}
+
+	public void makeSound() {
+		sound.makeSound();
+	}
+	
 
 	public double getWeight() {
 		return weight;
