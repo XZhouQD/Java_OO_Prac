@@ -1,11 +1,11 @@
 package prac17;
 
 public class UserA {
-	private String firstName;
-	private String lastName;
-	private int age;
-	private int[] phone;
-	private String address;
+	private String firstName; //required
+	private String lastName; //required
+	private int age; //optional
+	private int[] phone; //optional
+	private String address; //optional
 	
 	public UserA(String firstName, String lastName) {
 		this(firstName, lastName, 0);

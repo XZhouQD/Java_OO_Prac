@@ -6,8 +6,8 @@ public class Main {
 		Sandwich s = new Bread("Lapis");
 		s = new EggSandwich(s);
 		s = new HamSandwich(s);
-		s = new ThousandIslandSauceSandwich(s);
-		System.out.println(s.getDescription());
+		s = new TomatoSandwich(s);
+		System.out.println(s.getDescription() + ", price = " + s.getCost());
 	}
 
 }
